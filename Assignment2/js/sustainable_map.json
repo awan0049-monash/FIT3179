@@ -4,6 +4,9 @@
     "height": 450,
     "title": "Countries with access to electricity (percentage)",
     "projection": {"type": "equalEarth"},
+    "data": {
+        "url": "https://raw.githubusercontent.com/awan0049-monash/FIT3179/main/Assignment2/data/sustainable_energy.csv"
+    },
 
     "params": [
         {
@@ -22,14 +25,14 @@
     "layer": [
         {
             "data": {
-                "url": "ne_110m_admin_0_countries.json",
+                "url": "https://raw.githubusercontent.com/awan0049-monash/FIT3179/main/Assignment2/js/ne_110m_admin_0_countries.json",
                 "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
             },
             "mark": {"type": "geoshape", "color": "lightgray", "stroke": "white"}
         },
         {
             "data": {
-                "url": "ne_110m_admin_0_countries.json",
+                "url": "https://raw.githubusercontent.com/awan0049-monash/FIT3179/main/Assignment2/js/ne_110m_admin_0_countries.json",
                 "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
             },
             "transform": [
@@ -48,7 +51,8 @@
             "encoding": {
                 "color": {
                     "field": "Access to electricity (% of population)",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "scale": {"domain": [0,100]}
                 },
                 "tooltip": [
                     {"field": "properties.NAME", "type": "nominal", "title": "Country"},
