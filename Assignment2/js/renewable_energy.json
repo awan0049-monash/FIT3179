@@ -42,7 +42,7 @@
                         "data": {
                             "url": "https://raw.githubusercontent.com/awan0049-monash/FIT3179/main/data/sustainable_energy.csv"
                         },
-                        "key": "Entity",
+                        "key": "Country",
                         "fields": ["Renewable energy share in the total final energy consumption (%)", "Year"]
                     }
                 },
